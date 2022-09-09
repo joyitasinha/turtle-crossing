@@ -20,3 +20,6 @@ class Player(Turtle):
     def up(self):
         self.fd(MOVE_DISTANCE)
 
+    def is_at_finish_line(self):
+        return self.ycor() > FINISH_LINE_Y
+
